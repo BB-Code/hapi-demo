@@ -1,0 +1,33 @@
+{
+  "name": "hapi-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "supervisor app.js"
+  },
+  "keywords": [],
+  "author": "BB-Code",
+  "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "hapi": "^16.7.0",
+    "hapi-swagger": "^7.10.0",
+    "husky": "^4.2.5",
+    "inert": "^4.2.1",
+    "joi": "^13.7.0",
+    "mysql2": "^2.1.0",
+    "package": "^1.0.1",
+    "prettier": "^2.0.5",
+    "sequelize": "^6.3.3",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "env2": "^2.2.2",
+    "sequelize-cli": "^6.2.0"
+  }
+}
