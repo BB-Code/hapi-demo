@@ -17,8 +17,8 @@ module.exports = {
 
   down: async (queryInterface, Sequelize) => {
     await queryInterface.bulkDelete('shops', {
-      id:{
-        [Op.in]:[1,2,3,4]
+      id: {
+        [Op.in]: [1, 2, 3, 4]
       }
     }, {});
   }

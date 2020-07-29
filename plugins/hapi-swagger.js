@@ -9,14 +9,14 @@ module.exports = [
     {
         register: hapiSwagger,
         options: {
-            info:{
+            info: {
                 title: '接口文档',
                 version: package.version
             },
-            grouping:'tags',
+            grouping: 'tags',
             tags: [
                 {
-                    name:'tests',
+                    name: 'tests',
                     description: 'test the Interface'
                 }
             ]

@@ -2,11 +2,11 @@ module.exports = [
     {
         method: 'GET',
         path: '/',
-        handler:(req, res) =>{
+        handler: (req, res) => {
             res('the router is listening')
         },
         config: {
-            tags: ['api','tests'],
+            tags: ['api', 'tests'],
             description: 'test the api'
         }
     }

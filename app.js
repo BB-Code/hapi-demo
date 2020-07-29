@@ -5,16 +5,18 @@ const config = require('./config');
 const routesIndex = require('./routers');
 const shopsRouters = require('./routers/shops');
 const ordersRouters = require('./routers/orders');
-const pulgin = require('./plugins/hapi-swagger');
+const swaggerPulgin = require('./plugins/hapi-swagger');
+const paginationPulgin = require('./plugins/hapi-pagination');
 
 server.connection({
     port: config.port,
     host: config.host
 });
 
-const init  = async () => {
+const init = async () => {
     await server.register([
-        ...pulgin
+        ...swaggerPulgin,
+        paginationPulgin
     ]);
     server.route([
         ...routesIndex,

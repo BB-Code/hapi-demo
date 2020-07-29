@@ -8,7 +8,7 @@ module.exports = [
             res('orders router1 is listening')
         },
         config: {
-            validate:{
+            validate: {
                 payload: {
                     goodsList: Joi.array().items(
                         Joi.object().keys({
@@ -17,7 +17,7 @@ module.exports = [
                         })
                     )
                 },
-                headers:Joi.object(
+                headers: Joi.object(
                     {
                         authorization: Joi.string().required()
                     }
