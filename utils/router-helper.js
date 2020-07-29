@@ -5,5 +5,13 @@ const pagenationDefine  = {
     pagination: Joi.boolean().description('是否开启分页,默认true')
 };
 
-module.exports = { pagenationDefine};
+const jwtHeaderDefines = {
+    headers: Joi.object(
+        {
+            authorization: Joi.string().required()
+        }
+    ).unknown(),
+}
+
+module.exports = { pagenationDefine, jwtHeaderDefines};
 

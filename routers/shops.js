@@ -21,6 +21,7 @@ module.exports = [
                     ...pagenationDefine
                 }
             },
+            auth: false,
             description: '获取店铺列表'
         }
     },
@@ -44,6 +45,7 @@ module.exports = [
                     shopId: Joi.string().required()
                 }
             },
+            auth: false,
             tags: ['api', GROUP_NAME],
             description: '获取某店铺的商品列表'
         }

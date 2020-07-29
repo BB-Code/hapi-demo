@@ -10,7 +10,8 @@ const db = {};
 const config = {
   ...configs[env],
   define: {
-    underscored: true
+    underscored: true,
+    timestamps: false
   }
 };
 let sequelize = null;
