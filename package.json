@@ -4,12 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "supervisor app.js"
+    "dev": "supervisor app.js",
+    "test": "lab -v -c -t"
   },
   "keywords": [],
   "author": "BB-Code",
   "license": "MIT",
   "dependencies": {
+    "@sentry/node": "^5.20.1",
     "axios": "^0.19.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.5.0",
@@ -37,6 +39,8 @@
   },
   "devDependencies": {
     "env2": "^2.2.2",
-    "sequelize-cli": "^6.2.0"
+    "sequelize-cli": "^6.2.0",
+    "@hapi/code": "^8.0.2",
+    "@hapi/lab": "^22.0.5"
   }
 }

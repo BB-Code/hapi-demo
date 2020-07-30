@@ -46,6 +46,18 @@ const options = {
                 }]
             },
 
+        ],
+        typeHttps: [
+            {
+                module: 'good-squeeze',
+                name: 'Squeeze',
+                args: [{ error: '*' }]
+            },
+            {
+                module: 'good-http',
+                args: ['http://localhost:3000/reportErrorLog',{}]
+            },
+
         ]
     }
 }
