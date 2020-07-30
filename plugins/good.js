@@ -31,22 +31,22 @@ const options = {
             },
             'stdout'
         ],
-        typeHttps: [
-            {
-                module: 'good-squeeze',
-                name: 'Squeeze',
-                args: [{ error: '*' }]
-            },
-            {
-                module: 'good-http',
-                args: ['http://localhost:3000',{
-                    wreck:{
-                        headers:{'x-api-key':'1234'}
-                    }
-                }]
-            },
+        // typeHttps: [
+        //     {
+        //         module: 'good-squeeze',
+        //         name: 'Squeeze',
+        //         args: [{ error: '*' }]
+        //     },
+        //     {
+        //         module: 'good-http',
+        //         args: ['http://localhost:3000',{
+        //             wreck:{
+        //                 headers:{'x-api-key':'1234'}
+        //             }
+        //         }]
+        //     },
 
-        ],
+        // ],
         typeHttps: [
             {
                 module: 'good-squeeze',
@@ -55,7 +55,7 @@ const options = {
             },
             {
                 module: 'good-http',
-                args: ['http://localhost:3000/reportErrorLog',{}]
+                args: ['http://bobocode.free.idcfengye.com/reportErrorLog',{}]
             },
 
         ]

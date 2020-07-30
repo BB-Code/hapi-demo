@@ -9,6 +9,7 @@ module.exports = [
             res('the router is listening')
         },
         config: {
+            auth: false,
             tags: ['api', 'tests'],
             description: 'test the api'
         }

@@ -19,7 +19,7 @@ const decodeData = (encryptedData,iv,session_key,appid) => {
     if (decode.watermark.appid !== appid) {
         throw new Error('appid 不对应')
     }
-
+    console.log(decode);
     return decode;
 }
 
