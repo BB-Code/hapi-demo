@@ -11,7 +11,7 @@
   "author": "BB-Code",
   "license": "MIT",
   "dependencies": {
-    "@sentry/node": "^5.20.1",
+    "@sentry/node": "^6.2.0",
     "axios": "^0.21.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.5.0",
